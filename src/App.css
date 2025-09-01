@@ -1,0 +1,44 @@
+*{
+  font-family: "Libertinus Serif Display", system-ui;
+}
+/* Default: show right side of image (keep couple visible) */
+.parallax-layer {
+  background-position: right center !important;
+ 
+}
+
+/* On small screens, adjust if needed */
+@media (max-width: 768px) {
+  .parallax-layer {
+    background-position: 70% center !important;
+  /* still keep couple visible */
+  }
+
+}
+.swiper-slide img {
+  width: 300px;
+  aspect-ratio: 1 / 1; /* makes it a square */
+  object-fit: cover;
+  border-radius: 12px;
+}
+.featurned-in{
+  background-image: url("https://wallpaperaccess.com/full/6247676.jpg");
+  width: 100%;
+  min-height: 50vh; /* gives at least half screen height */
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+ 
+  
+}
+.ft{
+  background-image: url("http://s1.picswalls.com/wallpapers/2014/01/22/black-backgrounds_052245_13.jpg");
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+}
+.team{
+  background-image: url("https://wallpaperset.com/w/full/7/e/b/437982.jpg");
+}
+
+
