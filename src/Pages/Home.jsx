@@ -38,7 +38,7 @@ const persons = [
 function Home() {
   return (
     <div>
-        <div className="Hero-section">
+        <div className="Hero-section" id="home">
                 <nav className="navbar navbar-expand-lg bg-body-transparent">
                   <div className="container-fluid">
         
@@ -51,7 +51,10 @@ function Home() {
                           <a className="nav-link active text-warning" style={{ fontWeight: "600", fontSize: "25px" }} aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link text-warning" style={{ fontWeight: "600", fontSize: "25px" }} href="#featured">Featured Photographs</a>
+                          <a className="nav-link text-warning" style={{ fontWeight: "600", fontSize: "25px" }} href="#about">About</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link text-warning" style={{ fontWeight: "600", fontSize: "25px" }} href="#featured">Featured_Photographs</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link text-warning" style={{ fontWeight: "600", fontSize: "25px" }} href="#teams">Team</a>
@@ -107,7 +110,7 @@ function Home() {
                 </ParallaxBanner>
               </div>
         
-              <div className="mt-4" style={{overflow:"hidden"}}>
+              <div className="mt-4" id="about" style={{overflow:"hidden"}}>
                 <h1 className="text-center">ABOUT US</h1>
                 <div className="container-fluid">
                   <div className="row">
@@ -347,13 +350,14 @@ function Home() {
                     </div>
                     <div className="col-md-4 d-flex justify-content-center align-items-center flex-column">
         
-                      <h2 className="text-center text-light">Home</h2>
-                      <h2 className="text-center text-light">Featured Photographs</h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href='#home'>Home</a></h2>
+                       <h2 className="text-center "><a className="text-decoration-none text-light" href='#about'>About</a></h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href="#featured">Featured Photographs</a></h2>
         
-                      <h2 className="text-center text-light">Team</h2>
-                      <h2 className="text-center text-light">Testimonials</h2>
-                      <h2 className="text-center text-light">Portfolio</h2>
-                      <h2 className="text-center text-light">Contact</h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href='#team'>Team</a></h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href='#test'>Testimonials</a></h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href='#portfolio'>Portfolio</a></h2>
+                      <h2 className="text-center "><a className="text-decoration-none text-light" href='#contact'>Contact</a></h2>
         
                     </div>
                     <div className="col-md-4 d-flex justify-content-center align-items-center">
